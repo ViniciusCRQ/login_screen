@@ -1,10 +1,11 @@
 let loginbutton = document.getElementById('login-btn');
 
-let textlogin = document.getElementById('login-i');
-let textpasswd = document.getElementById('login-p');
 
 function clickar(){
 
+
+    let textlogin = document.getElementById('login-i');
+    let textpasswd = document.getElementById('login-p');
 
     if ( textlogin.value == 'Syniila' && textpasswd.value == '123' ){
         window.open( "../index/index_adm.html" , "_top")
@@ -15,7 +16,6 @@ function clickar(){
     } else{
         window.alert('Os campos estão vazios! Preencha-os para poder prosseguir')
     }
- 
 }
 
 document.addEventListener("keydown", function(event){
@@ -35,4 +35,8 @@ document.addEventListener("keydown", function(event){
 }
  
 });
+
+
+
+
 
